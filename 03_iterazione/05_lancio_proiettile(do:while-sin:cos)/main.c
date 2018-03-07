@@ -30,7 +30,6 @@ utilizzando le note relazioni che utilizzano il seno e il coseno.
 */
 
 #include <stdio.h>
-#include <stdlib.h>
 #include <math.h>
 
 #define g 9.81
@@ -61,7 +60,8 @@ int main() {
         y = v0y*t - 0.5*g*t*t; // moto accelerato
         t = t + 0.1; // incremento t
         
-    } while (y > 0); // finche' y e' positiva
+    } while (y > 0); // finche' y e' positiva 
+                     //il proiettile non tocca terra
     
     return 0;
     

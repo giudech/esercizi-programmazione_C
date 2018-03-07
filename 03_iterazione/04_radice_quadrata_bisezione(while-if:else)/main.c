@@ -40,8 +40,7 @@ int main() {
     a = 0; // estremo inferiore
     b = N; // estremo superiore
     
-    // finche' la differenza tra gli estremi dell'intervallo
-    // e' > di epsilon
+    // finche' la differenza tra gli estremi e' > di epsilon
     while(b - a > epsilon) {
         
         medio = (a + b)/2; // medio = alla media tra gli estremi
@@ -53,6 +52,7 @@ int main() {
             b = medio; // medio e' l'estremo superiore
         else // altrimenti
             a = medio; // medio e' l'estremo inferiore
+     
     } // verifico di nuovo la condizione
     
     printf("La radice di %.3f vale %.3f\n",N, medio);
